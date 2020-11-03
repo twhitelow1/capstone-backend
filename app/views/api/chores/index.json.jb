@@ -1,0 +1,12 @@
+@chores.map do |chore|
+  {
+    title: chore.title,
+    desc: chore.desc,
+    frequency: chore.frequency,
+    last_completed: chore.last_completed,
+    points_gain: chore.points_gain,
+    points_price: chore.points_price,
+    room: chore.room,
+    currently_assigned: chore.currently_assigned,
+  }
+end
