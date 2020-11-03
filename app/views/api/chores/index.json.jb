@@ -2,8 +2,8 @@
   {
     title: chore.title,
     desc: chore.desc,
-    frequency: chore.frequency,
-    last_completed: chore.last_completed,
+    frequency: chore.frequency.hours / 1.day,
+    last_completed: chore.last_completed.strftime("%m/%d/%Y"),
     points_gain: chore.points_gain,
     points_price: chore.points_price,
     room: chore.room,

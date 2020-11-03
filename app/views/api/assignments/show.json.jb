@@ -2,7 +2,7 @@
   id: @assignment.id,
   chore: @assignment.chore,
   user: @assignment.user,
-  due_date: @assignment.due_date,
+  due_date: @assignment.due_date.strftime("%m/%d/%Y"),
   completed_date: @assignment.completed_date,
   assigner_id: @assignment.assigner_id,
 }
