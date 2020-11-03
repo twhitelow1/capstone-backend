@@ -1,0 +1,10 @@
+@assignments.map do |assignment|
+  {
+    id: assignment.id,
+    chore: assignment.chore,
+    user: assignment.user,
+    due_date: assignment.due_date,
+    completed_date: assignment.completed_date,
+    assigner_id: assignment.assigner_id,
+  }
+end
