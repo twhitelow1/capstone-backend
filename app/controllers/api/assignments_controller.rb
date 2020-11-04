@@ -25,6 +25,7 @@ class Api::AssignmentsController < ApplicationController
     @assignment.user_id = params[:user_id] || @assignment.user_id
     @assignment.due_date = params[:due_date] || @assignment.due_date
     @assignment.completed_date = params[:completed_date] || @assignment.completed_date
+    @assignment.completed = params[:completed] || @assignment.completed
     @assignment.assigner_id = params[:assigner_id] || @assignment.assigner_id
     if @assignment.save
       render json: {message:"Assignment updated successfully"}, status: :created
