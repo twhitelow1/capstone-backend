@@ -27,5 +27,5 @@ Chore.create!(title: "take out trash", desc: "dont forget to put it in the right
 Chore.create!(title: "Dishes", desc: "make sure you clean all of the food off the plates before loading in dishwasher", frequency: 24, last_completed: 1.day.ago, points_gain: 50, points_price: 150, room_id: 1, currently_assigned: true)
 
 Assignment.create!(chore_id: 1, user_id: 1, due_date: 1.day.ago, completed_date: 3.days.ago, assigner_id: 2)
-Assignment.create!(chore_id: 2, user_id: 1, due_date: 1.day.ago, completed_date: 3.days.ago, assigner_id: 1)
+Assignment.create!(chore_id: 2, user_id: 1, due_date: 1.day.ago, completed_date: 2.days.ago, assigner_id: 1)
 Assignment.create!(chore_id: 3, user_id: 2, due_date: 1.day.ago, assigner_id: 1)
