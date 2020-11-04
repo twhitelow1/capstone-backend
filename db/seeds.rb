@@ -24,8 +24,8 @@ Chore.create!(title: "laundry", desc: "collect cloths from around the main room"
 Chore.create!(title: "main room table", desc: "clean off all the crumbs on the table", frequency: 24, last_completed: 1.day.ago, points_gain: 50, points_price: 150, room_id: 4, currently_assigned: false)
 
 Assignment.create!(chore_id: 1, user_id: 1, due_date: 1.day.ago, completed_date: 3.days.ago, assigner_id: 2)
-Assignment.create!(chore_id: 2, user_id: 1, due_date: 1.day.ago, completed_date: 2.days.ago, assigner_id: 1)
-Assignment.create!(chore_id: 3, user_id: 2, due_date: 1.day.ago, assigner_id: 1)
-Assignment.create!(chore_id: 1, user_id: 3, due_date: 1.day.ago, assigner_id: 1)
-Assignment.create!(chore_id: 4, user_id: 3, due_date: 1.day.ago, assigner_id: 3)
-Assignment.create!(chore_id: 2, user_id: 1, due_date: 1.day.ago, assigner_id: 3)
+Assignment.create!(chore_id: 2, user_id: 1, due_date: 2.days.from_now, completed_date: 2.days.ago, assigner_id: 1)
+Assignment.create!(chore_id: 3, user_id: 2, due_date: 2.days.from_now, assigner_id: 1)
+Assignment.create!(chore_id: 1, user_id: 3, due_date: 4.days.from_now, assigner_id: 1)
+Assignment.create!(chore_id: 4, user_id: 3, due_date: 5.days.from_now, assigner_id: 3)
+Assignment.create!(chore_id: 2, user_id: 1, due_date: 7.days.from_now, assigner_id: 3)
