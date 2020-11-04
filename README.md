@@ -1,18 +1,26 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This app is the backend to my Actualize Capstone Project.
 
-Things you may want to cover:
+The backend provides several routes based on RESTful conventions. The purpose of this microservice is to 
 
-* Ruby version
+
+* Ruby version 2.7.1
 
 * System dependencies
 
 * Configuration
+First clone this repository to a local machine
+
+In the Terminal, navigate to the cloned folder and run the following.
+```bash
+bundle install 
+```
 
 * Database creation
-
+```ruby
+Rails db:create db:migrate db:seed
+```
 * Database initialization
 
 * How to run the test suite
