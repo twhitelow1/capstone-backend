@@ -1,9 +1,1 @@
-{
-  id: @assignment.id,
-  chore: @assignment.chore,
-  user: @assignment.user,
-  due_date: @assignment.due_date,
-  completed_date: @assignment.completed_date,
-  completed: @assignment.completed,
-  assigner_id: @assignment.assigner_id,
-}
+render partial: "assignment.json.jb", locals: { assignment: @assignment }
