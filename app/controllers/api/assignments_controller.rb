@@ -1,13 +1,8 @@
 class Api::AssignmentsController < ApplicationController
   def index
     @assignments = Assignment.where(completed: false)
-
-    if params[:completed] == "true"
-      @assignments = Assignment.where(completed: true)
-    end
-
+    @assignments = Assignment.show_completed(params[:completed])
     @assignments = @assignments.order(due_date: :asc)
-
     render "index.json.jb"
   end
 
