@@ -7,6 +7,7 @@
     points_gain: chore.points_gain,
     points_price: chore.points_price,
     room: chore.room,
+    users: chore.users,
     currently_assigned: chore.currently_assigned,
   }
 end
