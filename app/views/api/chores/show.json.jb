@@ -1,0 +1,11 @@
+{
+  title: @chore.title.capitalize,
+  desc: @chore.desc,
+  frequency: @chore.frequency.hours / 1.day,
+  last_completed: @chore.last_completed.strftime("%m/%d/%Y"),
+  points_gain: @chore.points_gain,
+  points_price: @chore.points_price,
+  room: @chore.room,
+  users: @chore.users,
+  currently_assigned: @chore.currently_assigned,
+}

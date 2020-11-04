@@ -1,6 +1,6 @@
 @chores.map do |chore|
   {
-    title: chore.title,
+    title: chore.title.capitalize,
     desc: chore.desc,
     frequency: chore.frequency.hours / 1.day,
     last_completed: chore.last_completed.strftime("%m/%d/%Y"),
