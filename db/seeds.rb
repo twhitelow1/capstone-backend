@@ -1,15 +1,8 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
 
-User.create!(email: "todd@example.com", password: "password", password_confirmation: "password", first_name: "todd", last_name: "example", house_id: 1, points: 0)
-User.create!(email: "kiya@example.com", password: "password", password_confirmation: "password", first_name: "kiya", last_name: "example", house_id: 1, points: 0)
-User.create!(email: "jason@example.com", password: "password", password_confirmation: "password", first_name: "jason", last_name: "example", house_id: 1, points: 0)
-User.create!(email: "john@example.com", password: "password", password_confirmation: "password", first_name: "john", last_name: "example", house_id: 2, points: 0)
+User.create!(email: "todd@example.com", password: "password", password_confirmation: "password", first_name: "todd", last_name: "example", home_id: 1, points: 0)
+User.create!(email: "kiya@example.com", password: "password", password_confirmation: "password", first_name: "kiya", last_name: "example", home_id: 1, points: 0)
+User.create!(email: "jason@example.com", password: "password", password_confirmation: "password", first_name: "jason", last_name: "example", home_id: 1, points: 0)
+User.create!(email: "john@example.com", password: "password", password_confirmation: "password", first_name: "john", last_name: "example", home_id: 2, points: 0)
 
 Home.create!(user_id: 1, addr_number: 2345, addr_street: "First Drive Lane", addr_unit: "56", addr_city: "Pine Hills", addr_state: "FL", addr_zip: 34420, home_type: "house")
 Home.create!(user_id: 4, addr_number: 678, addr_street: "Second Drive Lane", addr_unit: "A5", addr_city: "Bollywood Hills", addr_state: "CO", addr_zip: 85547, home_type: "apartment")

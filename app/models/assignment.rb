@@ -12,4 +12,8 @@ class Assignment < ApplicationRecord
     return User.find_by(id: id)
   end
 
+  def users
+    return User.where(home_id: chore.room.home_id)
+  end
+
 end

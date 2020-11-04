@@ -30,7 +30,7 @@ ActiveRecord::Schema.define(version: 2020_11_03_080215) do
     t.string "title"
     t.string "desc"
     t.integer "frequency"
-    t.datetime "last_completed", default: "2020-11-03 13:53:47"
+    t.datetime "last_completed", default: "2020-11-03 15:28:27"
     t.integer "points_gain"
     t.integer "points_price"
     t.integer "room_id"
@@ -67,7 +67,7 @@ ActiveRecord::Schema.define(version: 2020_11_03_080215) do
     t.string "email"
     t.string "first_name"
     t.string "last_name"
-    t.integer "house_id"
+    t.integer "home_id"
     t.integer "points"
     t.string "password_digest"
     t.datetime "created_at", precision: 6, null: false

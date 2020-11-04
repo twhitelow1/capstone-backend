@@ -5,7 +5,7 @@ class Api::UsersController < ApplicationController
       email: params[:email],
       first_name: params[:first_name],
       last_name: params[:last_name],
-      house_id: params[:house_id],
+      home_id: params[:home_id],
       points: params[:points],
       password: params[:password],
       password_confirmation: params[:password_confirmation]
