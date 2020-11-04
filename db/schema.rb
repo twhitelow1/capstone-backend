@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 2020_11_03_080215) do
     t.integer "user_id"
     t.datetime "due_date"
     t.datetime "completed_date"
+    t.boolean "completed", default: false
     t.integer "assigner_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -29,7 +30,7 @@ ActiveRecord::Schema.define(version: 2020_11_03_080215) do
     t.string "title"
     t.string "desc"
     t.integer "frequency"
-    t.datetime "last_completed", default: "2020-11-02 08:12:50"
+    t.datetime "last_completed", default: "2020-11-03 11:11:47"
     t.integer "points_gain"
     t.integer "points_price"
     t.integer "room_id"

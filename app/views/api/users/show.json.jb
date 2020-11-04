@@ -1,0 +1,8 @@
+{
+  id: @user.id,
+  email: @user.email,    
+  first_name: @user.first_name,
+  last_name: @user.last_name,
+  house_id: @user.house_id,
+  points: @user.points,
+}

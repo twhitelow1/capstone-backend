@@ -1,6 +1,6 @@
 class Api::AssignmentsController < ApplicationController
   def index
-    @assignments = Assignment.all
+    @assignments = Assignment.where(completed: false)
     render "index.json.jb"
   end
 

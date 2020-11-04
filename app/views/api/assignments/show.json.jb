@@ -4,5 +4,6 @@
   user: @assignment.user,
   due_date: @assignment.due_date.strftime("%m/%d/%Y"),
   completed_date: @assignment.completed_date,
+  completed: @assignment.completed,
   assigner_id: @assignment.assigner_id,
 }

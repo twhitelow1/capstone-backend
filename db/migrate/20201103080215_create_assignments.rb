@@ -5,6 +5,7 @@ class CreateAssignments < ActiveRecord::Migration[6.0]
       t.integer :user_id
       t.datetime :due_date
       t.datetime :completed_date
+      t.boolean :completed, default: false
       t.integer :assigner_id
 
       t.timestamps
