@@ -2,7 +2,7 @@ class Chore < ApplicationRecord
   belongs_to :room
   has_many :users, through: :assignments
 
-  # All assignments that specific chore has ever been assigned
+  # # All assignments that specific chore has ever been assigned
   def assignments
     return Assignment.where(chore_id: id)
   end
@@ -15,11 +15,11 @@ class Chore < ApplicationRecord
 
   # Returns Last time chore was completed
   def last_completed
-    result = assignments.order(completed_date: :desc)
-    if !result.first.completed_date
-      return result.first.completed_date
+    result = Assignment.where(chore_id: id).order(completed_date: :desc)
+    if result.first.completed_date == nil
+      return nil
     else 
-      return result.first.completed_date.to_f * 1000
+      return result.first.completed_date
     end
   end
 

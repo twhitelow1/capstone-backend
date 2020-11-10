@@ -4,5 +4,5 @@ class User < ApplicationRecord
   validates :first_name, presence: true
 
   belongs_to :home, optional: true
-  has_many :assignments
+  has_many :chores, through: :assignments
 end
