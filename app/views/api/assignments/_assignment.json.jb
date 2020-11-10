@@ -2,6 +2,7 @@
   id: assignment.id,
   first_name: assignment.user.first_name.capitalize,
   choreTitle: assignment.chore.title.capitalize,
+  room: assignment.chore.room.name.capitalize,
   chore: assignment.chore,
   user: assignment.user,
   jsDate: assignment.js_date,
