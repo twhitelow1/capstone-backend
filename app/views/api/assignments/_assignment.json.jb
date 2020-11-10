@@ -1,8 +1,10 @@
 {
   id: assignment.id,
+  first_name: assignment.user.first_name.capitalize,
+  choreTitle: assignment.chore.title.capitalize,
   chore: assignment.chore,
   user: assignment.user,
-  due_date: assignment.due_date,
+  jsDate: assignment.js_date,
   completed_date: assignment.completed_date,
   completed: assignment.completed,
   assigner: assignment.assigner,

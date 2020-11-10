@@ -3,8 +3,8 @@ class CreateAssignments < ActiveRecord::Migration[6.0]
     create_table :assignments do |t|
       t.integer :chore_id
       t.integer :user_id
-      t.datetime :due_date, 
-      t.datetime :completed_date, 
+      t.datetime :due_date
+      t.datetime :completed_date
       t.boolean :completed, default: false
       t.integer :assigner_id
 

@@ -6,7 +6,8 @@ class CreateUsers < ActiveRecord::Migration[6.0]
       t.string :last_name
       t.integer :home_id
       t.integer :points
-      t.string :password_digest
+      t.string :profile_img_url, default: "https://via.placeholder.com/150"
+      t.string :password_digest 
 
       t.timestamps
     end

@@ -14,4 +14,8 @@ class Assignment < ApplicationRecord
     return User.where(home_id: chore.room.home_id)
   end
 
+  def js_date
+    return Assignment.find_by(id: id).due_date.to_f * 1000
+  end
+
 end
