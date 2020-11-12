@@ -6,6 +6,7 @@
   chore: assignment.chore,
   user: assignment.user,
   jsDate: assignment.js_date,
+  is_assigned: current_user && assignment.user_id == current_user.id,
   completed_date: assignment.completed_date,
   completed: assignment.completed,
   assigner: assignment.assigner,

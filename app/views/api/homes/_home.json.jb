@@ -1,0 +1,12 @@
+{
+  id: home.id,
+  user_id: home.user.user_id.capitalize,
+  addr_number: home.addr_number,
+  addr_street: home.addr_street,
+  addr_unit: home.addr_unit,
+  addr_city: home.addr_city,
+  addr_state: home.addr_state,
+  addr_zip: home.addr_zip,
+  home_type: home.home_type,
+  home_members: home.memebers,
+}
