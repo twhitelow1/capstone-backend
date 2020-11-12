@@ -10,4 +10,4 @@
   completed_date: assignment.completed_date,
   completed: assignment.completed,
   assigner: assignment.assigner,
-}
+}   

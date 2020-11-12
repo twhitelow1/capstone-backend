@@ -10,15 +10,16 @@ class Api::AssignmentsController < ApplicationController
   end
 
   def create
-    assignment = Assignment.new(
+    @assignment = Assignment.new(
       chore_id: params[:chore_id],
       user_id: params[:user_id],
       due_date: params[:due_date],
       completed_date: params[:completed_date],
       assigner_id: params[:assigner_id],
     )
-    if assignment.save
-      render json: { message: "Assignment created successfully" }, status: :created
+    
+    if @assignment.save
+      render "show.json.jb" , status: :created
     else
       render json: { errors: assignment.errors.full_messages }, status: :bad_request
     end
