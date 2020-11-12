@@ -16,11 +16,7 @@ class Chore < ApplicationRecord
   # Returns Last time chore was completed
   def last_completed
     result = Assignment.where(chore_id: id).order(completed_date: :desc)
-    if result.first.completed_date == nil
-      return nil
-    else 
-      return result.first.completed_date
-    end
+    return result.first
   end
 
   # Returns all users who are attached to home

@@ -1,5 +1,6 @@
 @chores.map do |chore|
   {
+    id: chore.id,
     title: chore.title.capitalize,
     desc: chore.desc,
     frequency: chore.frequency.hours / 1.day,

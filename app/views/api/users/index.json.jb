@@ -4,7 +4,7 @@
     email: user.email,    
     first_name: user.first_name,
     last_name: user.last_name,
-    home_id: user.home_id,
+    home: user.home,
     points: user.points,
   }
 end
