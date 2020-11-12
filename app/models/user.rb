@@ -5,4 +5,9 @@ class User < ApplicationRecord
 
   belongs_to :home, optional: true
   has_many :chores, through: :assignments
+
+  def housemates
+    home.users.select{ |user| user.id != id}
+  end
+
 end

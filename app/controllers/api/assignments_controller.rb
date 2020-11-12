@@ -25,8 +25,6 @@ class Api::AssignmentsController < ApplicationController
     end
   end
 
-  
-
   def update
     if params[:id] == "completed"
       Assignment.where(:id => params[:assignments]).update(:completed => true, :completed_date => DateTime.now())

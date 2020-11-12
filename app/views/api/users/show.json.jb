@@ -5,5 +5,7 @@
   last_name: @user.last_name,
   home: @user.home,
   points: @user.points,
-  housemates: @user.home.users
+  profile_img_url: @user.profile_img_url,
+  housemates: @user.housemates,
+  full_name: "#{@user.first_name.capitalize} #{@user.last_name.capitalize}"
 }
