@@ -5,5 +5,5 @@
   last_name: @user.last_name,
   home: @user.home,
   points: @user.points,
-  house_mates: @user.home.users
+  housemates: @user.home.users
 }
