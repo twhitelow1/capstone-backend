@@ -8,6 +8,9 @@ Rails.application.routes.draw do
 
     get "/chores" => "chores#index"
 
+    get "/homes" => "homes#index"
+    get "/home" => "homes#show"
+
     get "/assignments" => "assignments#index"
     get "/assignments/:id" => "assignments#show"
     post "/assignments" => "assignments#create"
