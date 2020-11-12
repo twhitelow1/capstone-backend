@@ -1,0 +1,3 @@
+@homes.map do |home|
+  render partial: "home.json.jb", locals: { home: home }
+end
